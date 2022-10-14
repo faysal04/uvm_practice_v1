@@ -1,5 +1,6 @@
 package mux_pkg;
-  `include "mux_intf.sv";
+  import uvm_pkg::*;
+  //`include "mux_intf.sv";
   `include "mux_tx.sv";
   `include "mux_seq.sv";
   `include "mux_sequencer.sv";

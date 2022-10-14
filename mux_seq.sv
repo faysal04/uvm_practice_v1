@@ -12,11 +12,7 @@ class mux_seq extends uvm_sequence#(mux_tx);
 
   task body();
     start_item(txn);
-    txn.set_vals(1,0,1);
-    finish_item(txn);
-
-    start_item(txn);
-    txn.set_vals(1,0,0);
+    txn.randomizee;
     finish_item(txn);
   endtask
 
