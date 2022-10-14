@@ -2,6 +2,7 @@
 module top;
 
 import uvm_pkg::*;
+import mux_pkg::*;
 
 mux_intf pif ();
 

@@ -1,4 +1,5 @@
 class mux_tx extends uvm_sequence_item;
+  
   `uvm_object_utils(mux_tx)
   bit a     ;
   bit b     ;
