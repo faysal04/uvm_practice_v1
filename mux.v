@@ -1,17 +1,10 @@
 module mux (
-  input      a  ,
-  input      b  ,
-  input      sel,
-  output reg out
+  input  wire     a  ,
+  input  wire     b  ,
+  input  wire     sel,
+  output  reg     out
 );
 
-  always@(a or b or sel) begin
-    if(sel == 1'b1) begin
-      out = a;
-    end
-    else begin
-      out = b;
-    end
-  end
+assign out = sel? a:b; 
 
 endmodule
