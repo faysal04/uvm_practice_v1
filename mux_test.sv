@@ -12,12 +12,12 @@ class mux_test extends uvm_test;
     env = mux_env::type_id::create("env",this);
   endfunction
 
-  task run_phase(uvm_phase phase);
-    mux_seq seq1;
-    phase.raise_objection(this);
-    seq1= mux_seq::type_id::create("mux_seq",this);
-    seq1.start(env.agent.sqr);
-    phase.drop_objection(this);
-  endtask
+  // task run_phase(uvm_phase phase);
+  //   mux_seq seq1;
+  //   phase.raise_objection(this);
+  //   seq1= mux_seq::type_id::create("mux_seq",this);
+  //   seq1.start(env.agent.sqr);
+  //   phase.drop_objection(this);
+  // endtask
 
 endclass

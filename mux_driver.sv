@@ -16,6 +16,7 @@ class mux_driver extends uvm_driver#(mux_tx);
   endfunction
 
   task run_phase(uvm_phase phase);
+    super.run_phase(phase);
     forever begin
       seq_item_port.get_next_item(tx);
 
@@ -27,6 +28,7 @@ class mux_driver extends uvm_driver#(mux_tx);
         vif.select <= tx.select;
         vif.y <= tx.b;
       end
+      #20;
       tx.print();
       seq_item_port.item_done();
     end
