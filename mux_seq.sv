@@ -10,9 +10,11 @@ class mux_seq extends uvm_sequence#(mux_tx);
 
   virtual task body();
     txn=mux_tx::type_id::create("txn");
-    start_item(txn);
-    txn.randomizee;
-    finish_item(txn);
+    repeat(100) begin
+      start_item(txn);
+      txn.randomizee;
+      finish_item(txn);
+    end
   endtask
 
 endclass
