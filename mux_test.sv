@@ -13,10 +13,10 @@ class mux_test extends uvm_test;
   endfunction
 
   task run_phase(uvm_phase phase);
-    mux_seq seq10;
+    mux_seq seq1;
     phase.raise_objection(this);
-    seq10= mux_seq::type_id::create("mux_seq",this);
-    seq10.start(env.agent.sqr);
+    seq1= mux_seq::type_id::create("mux_seq",this);
+    seq1.start(env.agent.sqr);
     phase.drop_objection(this);
   endtask
 

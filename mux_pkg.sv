@@ -5,7 +5,7 @@ package mux_pkg;
   //`include "mux_intf.sv";
   `include "mux_tx.sv";
   `include "mux_seq.sv";
-  `include "mux_sequencer.sv";
+  //`include "mux_sequencer.sv";
   `include "mux_driver.sv";
   `include "mux_monitor.sv";
   `include "mux_agent.sv";

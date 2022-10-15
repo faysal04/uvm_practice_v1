@@ -10,7 +10,7 @@ class mux_seq extends uvm_sequence#(mux_tx);
 
   virtual task body();
     start_item(txn);
-    txn.randomizee;
+    //txn.randomizee;
     finish_item(txn);
   endtask
 

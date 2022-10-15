@@ -15,11 +15,11 @@ class mux_tx extends uvm_sequence_item;
 //  `uvm_field_int(select,UVM_ALL_ON)
 //  `uvm_object_utils_end
 
-  function randomizee;
-    this.a=$urandom_range(2,0);
-    this.b=$urandom_range(2,0);
-    this.select=$urandom_range(2,0);
-  endfunction
+//  function randomizee;
+//    this.a=$urandom_range(2,0);
+//    this.b=$urandom_range(2,0);
+//    this.select=$urandom_range(2,0);
+//  endfunction
 
 
 endclass
